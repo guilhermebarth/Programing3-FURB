@@ -1,0 +1,127 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title> Atividade 05</title>
+    <style>
+
+    .cssPadrao {
+        border: 5px solid red;
+        border-radius: 4px;
+        background-color: darkblue;
+        margin: 3px;
+    }
+
+    header {
+        padding: 0 3%;
+        text-align: center;
+    }
+
+    nav {
+        padding: 1.5% 3% 4% 0.5% !important;
+    }
+
+        nav > h2 {
+            margin: 0px;
+        }
+
+    main {
+        padding: 1% 8% 4% 1% !important;
+        border: 5px solid black !important;
+        background-color: white !important;
+        flex-direction: row;
+        width: 100%;
+    }
+
+        main > h1 {
+            margin: 0px;
+            text-align: left !important;
+        }
+
+    footer {
+        text-align: center;
+        padding: 2.35% 0px;
+    }
+
+        footer > h2 {
+            margin: 0px;
+        }
+
+    h2 {
+        font-family: Arial;
+        filter: invert(1);
+    }
+
+    .circu {
+        display: grid;
+        flex-direction: column;
+        justify-content: center;
+        box-sizing: border-box;
+    }
+
+    h3 {
+        font-weight: normal;
+    }
+
+    .divIdentacaoRow {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .divIdentacaoColumn {
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+    }
+
+    .divDiferenciada {
+        height: 100%;
+        background: lightblue;
+        border: 3px solid blue;
+        display: flex;
+        justify-content: center;
+    }
+
+    body {
+        box-sizing: border-box;
+        margin: 0px;
+        height: 100vh;
+        padding: 1%;
+    }
+
+    </style>
+</head>
+<body>
+    <div class="divDiferenciada">
+        <div class="divIdentacaoColumn">
+            <header class="cssPadrao">
+                <h2>Cabeçalho da página</h2>
+            </header>
+
+            <div class="divIdentacaoRow">
+                <nav class="cssPadrao">
+                    <h2>Menu<br>de<br>navegação</h2>
+                </nav>
+                <main class="cssPadrao">
+                    <h1> Conteúdo principal</h1>
+
+                    <h3>Cores:</h3>
+
+                    <ul>
+                        <li>#0066aa (tom de azul escuro)</li>
+                        <li>#cdf0ff (tom de azul claro)</li>
+                        <li>#ff0000 (vermelho)</li>
+                        <li>#000000 (preto)</li>
+                        <li>#ffffff (branco)</li>
+                    </ul>
+                </main>
+            </div>
+
+            <footer class="cssPadrao">
+                <h2>Rodapé da página</h2>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
