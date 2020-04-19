@@ -1,0 +1,127 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+
+    <title></title>
+    <link href="CSSManeiro.css" rel="stylesheet" />
+    <script src="JSmaneiro.js"></script>
+</head>
+<body onload="afterLoadManeira();">
+    <div class="divManeira">
+        <nav class="navBar">
+            <ul class="minhasULsFixas">
+                Institucional
+                <li class="firstLI">
+                    Localização
+                </li>
+                <li class="lastLI">
+                    Estrutura
+                </li>
+            </ul>
+            <ul class="minhasULsFixas">
+                Produtos
+                <li class="firstLI">
+                    Notebooks
+                </li>
+                <li>
+                    Celulares
+                </li>
+                <li class="lastLI">
+                    Eletrodomésticos
+                </li>
+            </ul>
+
+            <ul class="minhasULsFixas">
+                Sobre
+                <li class="firstLI lastLI">
+                    Contato
+                </li>
+            </ul>
+
+        </nav>
+    </div>
+    <main>
+        <table>
+            <tr>
+                <td>
+                    <img src="motocao.jpg" style="max-width: 250px" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="passabird.jpg" style="max-width: 250px" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="caoladrao.jpg" style="max-width: 250px" />
+                </td>
+            </tr>
+        </table>
+
+        <div class="styledaDiv">
+            <div class="divULsDinamicas">
+                <div id="divListaNaoOrdenada">
+                    <div style="text-align:center; margin-bottom: 8px;">
+                        <b class="breguenetiLouco" style="font-size: 20px;">Os meus textos maneiros</b>
+                    </div>
+                </div>
+
+                <div id="divObjetosDeFilme" style="justify-items:center; margin: 16px; margin-left: 48px;">
+                    <b style="display:block; text-align:center;">Filmes Disponíveis:</b>
+                    <div class="divManeiraDeControleDeFilme">
+                        <b style="width:100%">Nome</b>
+                        <b style="width:100%">Gênero</b>
+                        <b style="width:100%">Ano lançamento</b>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="manoManeiro" style="display:flex; justify-content: space-around;">
+                        <label> número 1</label>
+                        <input id="hdnNumero1" type="number" />
+                        <label> número 2</label>
+                        <input id="hdnNumero2" type="number" />
+                        <label> número 3</label>
+                        <input id="hdnNumero3" type="number" />
+
+                        <button onclick="maracutaisDoBotao();">Enviar</button>
+                    </div>
+
+                    <div class="manoManeiro" style="display:flex; margin: 16px 20px 0">
+                        <label> Digite um núero para saber a fatorial dele:  </label>
+                        <input id="fatorial" type="number" style="margin: 0px 8px;" />
+
+                        <button class="botaoFatorial" onclick="controleFatorial(document.getElementById('fatorial').value || 1)">Enviar</button>
+
+                        <div id="divDoResultadoFatorial" style="display:none;">
+                            <label style="margin: 0px 8px;">Resultado da fatorial</label>
+                            <input id="resultadoFatorial" type="number" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <table style="flex-direction: row-reverse !important">
+            <tr>
+                <td>
+                    <img src="motocao.jpg" style="max-width: 250px" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="passabird.jpg" style="max-width: 250px" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="caoladrao.jpg" style="max-width: 250px" />
+                </td>
+            </tr>
+        </table>
+    </main>
+</body>
+</html>

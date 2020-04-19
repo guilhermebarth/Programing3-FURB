@@ -1,0 +1,153 @@
+﻿.divManeira {
+    display: flex;
+    flex-direction: column;
+    background: orange;
+    z-index: 0;
+}
+
+
+.navBar {
+    display: inline-flex;
+    justify-content: space-around;
+    z-index: 0;
+    overflow: visible;
+}
+
+.minhasULsFixas {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 4px;
+    z-index: 50;
+    overflow: visible;
+}
+
+    ul > li {
+    }
+
+    ul:hover > li {
+        display: list-item !important;
+        justify-items: center !important;
+        align-self: center !important;
+    }
+
+li {
+    display: none;
+    position: relative;
+    padding: 4px;
+    list-style-type: none;
+    background: red;
+    width: 50%;
+    align-self: center;
+    z-index: 0;
+    box-shadow: 2px 4px 4px 1px;
+}
+
+    li:hover {
+        background: #ff003b;
+        box-shadow: inset 0px 0px 4px 1px, 2px 1px 4px 1px;
+        z-index: 999;
+        cursor: pointer;
+    }
+
+.firstLI {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.lastLI {
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+}
+
+img {
+    max-width: 250px;
+}
+
+table {
+    display: flex;
+    flex-direction: row;
+    max-width: 260px;    
+    padding: 0px;
+    margin: 1px;
+    box-sizing: border-box;
+}
+
+    table:hover {
+        margin: 0px;
+        box-sizing: border-box;
+        border: 1px solid black;
+    }
+
+.styledaDiv{
+    flex: 1;
+    display: grid;
+    justify-items: center;
+}
+
+.textboxManeiro {
+    flex: 1;
+}
+
+.divULsDinamicas{
+    padding: 4px;
+}
+.ulDinamica {
+    margin: 4px;
+    font-family: Arial;
+    font-size: 16px;
+    color: blue;
+}
+
+.divManeiraDeControleDeFilme {
+    display: flex;
+    justify-content: space-around;
+}
+
+p {
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+}
+
+.manoManeiro {
+    flex-direction: row;
+}
+
+@media only screen and (max-width: 1320px) {
+    .manoManeiro {
+        flex-direction: column;
+    }
+}
+
+.botaoFatorial {
+    border-radius: 5px;
+    border: 2px solid red;
+    padding: 1px 8px;
+    background: white;
+    transition: 0.8s;
+}
+
+.botaoFatorial:hover{
+    background: blue;
+    color: lightgreen;
+}
+
+
+.breguenetiLouco {
+    background: linear-gradient(to right, rgb(239, 0, 22), rgb(112, 01,214));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: Arial;
+    font-size: 32px;
+}
+
+.campoFatorialVisible {
+    display: inline-block !important;
+}
