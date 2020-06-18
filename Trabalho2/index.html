@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='nossoJavaScript.js'></script>
+</head>
+<style>
+    tr:nth-child(odd) {
+        background-color: #a7a9a7;
+    }
+    
+    table {
+        border-collapse: collapse;
+    }
+    
+    tr:nth-child(3) {
+        border: solid thin;
+    }
+    
+    th,
+    td {
+        border: 1px solid black;
+    }
+    
+    .botoesAcoes {
+        border: none;
+        background: transparent;
+        color: blue;
+        cursor: pointer;
+    }
+    
+    .legendasForm {
+        margin: 0 8px;
+        min-width: 100px;
+    }
+    
+    .apenasDisplayFlexEColumn {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .apenasDisplayFlexERow {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .divsInternasFormularios {
+        display: flex;
+        margin: 4px;
+    }
+    
+    .configuracaoPadraoInputFormulario {
+        border: 1px solid black;
+        padding: 8px;
+        border-radius: 5px;
+    }
+    
+    .campoLinhaToda {
+        width: 100%;
+        margin-right: 16px;
+    }
+    
+    .botoesFormulario {
+        padding: 16px 64px;
+        background-color: #08b8f1;
+        border: none;
+        border-radius: 8px;
+        color: white;
+        font-size: 16px;
+    }
+</style>
+
+<body>
+
+    <main>
+        <form style="display:inline-grid; border: 1px solid black; margin: 16px;">
+            <div class="apenasDisplayFlexERow" style="margin: 4px;">
+                <h2 id="legendaEmpregado" style="margin-left: 8px;">
+                    Adicionando novo Empregado
+                </h2>
+            </div>
+            <div class="apenasDisplayFlexEColumn">
+                <div class="divsInternasFormularios">
+                    <label class="legendasForm">Nome: </label>
+                    <input type="text" id="nomeEmpregadoFormulario" placeholder="Nome" class="configuracaoPadraoInputFormulario campoLinhaToda" />
+                </div>
+                <div class="divsInternasFormularios">
+                    <label class="legendasForm">Salário: </label>
+                    <input type="number" id="salarioEmpregadoFormulario" placeholder="0,00" class="configuracaoPadraoInputFormulario" />
+                </div>
+                <div class="divsInternasFormularios">
+                    <label class="legendasForm">Idade: </label>
+                    <input type="number" id="idadeEmpregadoFormulario" placeholder="0,00" class="configuracaoPadraoInputFormulario" />
+                </div>
+                <div class="divsInternasFormularios">
+                    <label class="legendasForm">Avatar: </label>
+                    <input type="text" id="avatarEmpregadoFormulario" placeholder="Nome" class="configuracaoPadraoInputFormulario campoLinhaToda" />
+                </div>
+            </div>
+
+            <div class="apenasDisplayFlexERow" style="justify-content: center; margin: 16px;;">
+                <input class="botoesFormulario" id="salvarAlteracao" type="button" value="Salvar" onclick="criarNovoEmpregado()" style="margin-right: 8px;" />
+                <input class="botoesFormulario" type="button" value="Cancelar" onclick="limparValores()">
+            </div>
+        </form>
+
+        <table id="tabelaDeValores" style="border: 1px solid black;">
+            <tr>
+                <th style="min-width: 50px; text-align: left;">
+                    ID
+                </th>
+                <th style="width: 400px;text-align: left;">
+                    Nome
+                </th>
+                <th style="width: 100px;text-align: left;">
+                    Salário
+                </th>
+                <th style="width: 100px; text-align: left;">
+                    Idade
+                </th>
+                <th style="width: 400px; text-align: left;">
+                    Avatar
+                </th>
+                <th style="width: 100px; text-align: left;">
+                    Ações
+                </th>
+            </tr>
+        </table>
+    </main>
+
+</body>
+
+</html>
